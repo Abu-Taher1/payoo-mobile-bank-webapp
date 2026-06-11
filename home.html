@@ -18,11 +18,11 @@
 
 
 </head>
-<body class="primary-font">
+<body class="primary-font ">
 
-    <section class="flex items-center justify-center h-screen">
+    <section class="flex items-center justify-center min-h-screen mb-10">
 
-        <div class=" rounded-lg w-[450px] h-[750px] bg-[#F4F5F7]">
+        <div class=" rounded-lg w-[450px]  bg-[#F4F5F7] mt-10">
 
 
             <!-- nav section -->
@@ -47,6 +47,98 @@
             <div class="mt-[32px] mx-4 ">
                 <h1 class="text-2xl font-bold text-[#1C1C1C]">🔥Welcome to Payooo!</h1>
                 <p class="mt-[12px] text-base text-gray-700">Enjoy easy and convenient financial services with us. Cashout charge is low.</p>
+            </div>
+
+            <!-- feature cards -->
+            <div class="mt-6 mx-4 grid grid-cols-3 gap-4 justify-center items-center">
+
+                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                    <div class="px-5 py-6">
+                        <img src="./assets/wallet1.png" class="mx-auto" alt="">
+                        <h2 class="text-center mt-2">Add Money</h2>
+                    </div>
+                </div>
+
+                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                    <div class="px-5 py-6">
+                        <img src="./assets/send1.png" class="mx-auto" alt="">
+                        <h2 class="text-center mt-2">Cashout</h2>
+                    </div>
+                </div>
+
+                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                    <div class="px-5 py-6">
+                        <img src="./assets/money1.png" class="mx-auto" alt="">
+                        <h2 class="text-center mt-2 ">Transfer</h2>
+                    </div>
+                </div>
+
+                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                    <div class="px-5 py-6">
+                        <img src="./assets/bonus1.png" class="mx-auto" alt="">
+                        <h2 class="text-center mt-2">Get Bonus</h2>
+                    </div>
+                </div>
+
+                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                    <div class="px-5 py-6">
+                        <img src="./assets/purse1.png" class="mx-auto" alt="">
+                        <h2 class="text-center mt-2">Pay Bill</h2>
+                    </div>
+                </div>
+
+                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                    <div class="px-5 py-6">
+                        <img src="./assets/transaction1.png" class="mx-auto" alt="">
+                        <h2 class="text-center mt-2">Transactions</h2>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <!-- gapppppppppppp -->
+            <div class="mt-6 mx-4 pb-6">
+                <!--add money section-->
+                <h2 class="text-lg font-semibold">Add Money</h2>
+
+                <div class="mt-4 bg-white min-h-[300px] rounded-2xl">
+
+                    <form>
+                        <div class="px-5 py-4">
+                        <label><span class="font-medium">Select A Bank</span></label>
+                        <select class="select select-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                            <option  disabled selected>Choose your bank</option>
+                            <option>Bank A</option>
+                            <option>Bank B</option>
+                            <option>Bank C</option>
+
+                        </select>
+                        </div>
+
+                        <div class="px-5 py-2">
+                            <label><span class="font-medium">Bank Account Number</span></label>
+                            <input type="text" placeholder="Enter your bank account number" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                        </div>
+                    
+                        <div class="px-5 py-2">
+                            <label><span class="font-medium">Amount to Add</span></label>
+                            <input type="text" placeholder="Enter amount to add" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                        </div>
+
+                        <div class="px-5 py-2 ">
+                            <label><span class="font-medium">Pin Number</span></label>
+                            <input type="password" placeholder="Enter your pin number" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                        </div>
+
+                        <div class="px-5 py-2 pb-6">
+                            <button type="button" id="" class=" font-bold bg-blue-500 text-white py-3 w-full  rounded-4xl mt-3 cursor-pointer">Add Money</button>
+                        </div>
+
+                    </form>
+
+                </div>
             </div>
             
             
