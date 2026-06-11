@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile Webapp</title>
+
+    <!--tailwind cdn-->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--daisy ui cdn-->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!--css-->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+
+
+</head>
+<body class="primary-font">
+
+    <section class="flex items-center justify-center h-screen">
+
+        <div class=" rounded-lg w-[450px] h-[700px] bg-[#F4F5F7]">
+
+            <div class="mt-30 w-[300px] h-[130px] mx-auto bg-[url('./assets/bg.png')] bg-cover flex items-center justify-center">
+
+                <img src="./assets/Group.png" alt="logo" ">
+
+            </div>
+
+            <form class=" p-10 mx-5 bg-white rounded-xl" >
+
+
+                <div class="">
+                <label for="mobile" class=" text-[16px] text-[#080808] font-semibold">Mobile Number</label>
+                <br>
+                <input type="text" id="mobile-number" name="mobile" class=" w-full input outline-none rounded-4xl mt-[8px]" placeholder="Enter your mobile number">
+               </div>
+
+                <div class="mt-4">
+                <label for="otp" class=" text-[16px] text-[#080808] font-semibold">4 Digit Pin</label>
+                <br>
+                <input type="text" id="pin-number" name="otp" class=" w-full input outline-none rounded-4xl mt-[8px]" placeholder="Enter your 4-digit pin">
+                </div>
+
+                <button type="button" id="loginButton" class=" font-bold bg-blue-500 text-white py-3 w-full  rounded-4xl mt-6 cursor-pointer">Login</button>
+
+            
+
+            </form>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- script js -->
+    <script src="script.js"></script>
+</body>
+</html>
