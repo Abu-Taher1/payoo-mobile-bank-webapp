@@ -34,7 +34,7 @@
                     </div>
 
                     <div>
-                    <h1 class="text-lg font-extrabold text-[#1C1C1C]">$45000</h1>
+                    <h1 class="text-lg font-extrabold text-[#1C1C1C]">$<span id="available-balance">45000</span></h1>
                     <p class="text-sm font-normal text-gray-600">Available Balance</p>
                     </div>
                 </div>    
@@ -52,14 +52,14 @@
             <!-- feature cards -->
             <div class="mt-6 mx-4 grid grid-cols-3 gap-4 justify-center items-center">
 
-                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                <div id="add-money-btn" class="border-2 border-[#0874F2]  rounded-xl cursor-pointer">
                     <div class="px-5 py-6">
                         <img src="./assets/wallet1.png" class="mx-auto" alt="">
                         <h2 class="text-center mt-2">Add Money</h2>
                     </div>
                 </div>
 
-                <div class="border-2 border-gray-300 rounded-xl cursor-pointer">
+                <div id="cash-out-btn" class="border-2 border-gray-300 rounded-xl cursor-pointer">
                     <div class="px-5 py-6">
                         <img src="./assets/send1.png" class="mx-auto" alt="">
                         <h2 class="text-center mt-2">Cashout</h2>
@@ -98,17 +98,14 @@
 
             </div>
 
-            <!-- gapppppppppppp -->
+            <!-- All form system -->
             <div class="mt-6 mx-4 pb-6">
                 <!--add money section-->
-                <h2 class="text-lg font-semibold">Add Money</h2>
-
-                <div class="mt-4 bg-white min-h-[300px] rounded-2xl">
-
-                    <form>
+                <div id="add-money-section" class="bg-white rounded-xl">
+                     <form>
                         <div class="px-5 py-4">
                         <label><span class="font-medium">Select A Bank</span></label>
-                        <select class="select select-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                        <select id="add-bank" class="select select-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
                             <option  disabled selected>Choose your bank</option>
                             <option>Bank A</option>
                             <option>Bank B</option>
@@ -119,26 +116,42 @@
 
                         <div class="px-5 py-2">
                             <label><span class="font-medium">Bank Account Number</span></label>
-                            <input type="text" placeholder="Enter your bank account number" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                            <input type="text" id="add-account" placeholder="Enter your bank account number" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
                         </div>
                     
                         <div class="px-5 py-2">
                             <label><span class="font-medium">Amount to Add</span></label>
-                            <input type="text" placeholder="Enter amount to add" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                            <input type="text" id="add-ammount" placeholder="Enter amount to add" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
                         </div>
 
                         <div class="px-5 py-2 ">
                             <label><span class="font-medium">Pin Number</span></label>
-                            <input type="password" placeholder="Enter your pin number" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
+                            <input type="password" id="add-pin" placeholder="Enter your pin number" class="input input-bordered rounded-full w-full mt-1 outline-none px-6 py-6">
                         </div>
 
                         <div class="px-5 py-2 pb-6">
-                            <button type="button" id="" class=" font-bold bg-blue-500 text-white py-3 w-full  rounded-4xl mt-3 cursor-pointer">Add Money</button>
+                            <button type="button" id="add-money-btn" class=" font-semibold bg-blue-500 text-white py-3 w-full  rounded-4xl mt-3 cursor-pointer">Add Money</button>
                         </div>
 
                     </form>
-
                 </div>
+
+                <!-- cashout section -->
+                <div></div>
+
+                <!-- Transfer section -->
+                <div></div> 
+
+                <!-- Get Bonus section -->
+                <div></div>
+
+                <!-- pay bill section -->
+                <div></div> 
+
+                <!--Transaction section-->
+                <div></div>
+                   
+ 
             </div>
             
             
@@ -154,6 +167,7 @@
 
 
 
-    
+    <!-- home js page -->
+    <script src="./home.js"></script>
 </body>
 </html>
