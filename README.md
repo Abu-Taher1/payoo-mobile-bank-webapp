@@ -5,3 +5,6 @@ Ph : Milestone-5 <br>
   &emsp;&emsp;->JavaScript(Vanilla) <br>
 <br>
 Live Link : https://abu-taher1.github.io/payoo-mobile-bank-webapp/
+<br>
+&emsp;&emsp;Mobile Number = 1234567890;<br>
+&emsp;&emsp;Pin Number = 12345
